@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/background</color>
+    <color name="colorPrimaryDark">@color/navy_dark_alpha_87</color>
+    <color name="colorAccent">@color/blue</color>
+
+    <color name="blue">#4974E7</color>
+    <color name="blue_dark">#2B56CC</color>
+    <color name="blue_alpha_34">#574974E7</color>
+    <color name="navy_dark_alpha_87">#DE1A263E</color>
+    <color name="pink">#EF325A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_light">#F0F0F0</color>
+    <color name="gray_extra_light">#F8F9FA</color>
+    <color name="black_alpha_10">#1A000000</color>
+    <color name="black_alpha_34">#57000000</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="background">@color/gray_extra_light</color>
+    <color name="divider">@color/black_alpha_10</color>
+    <color name="text">@color/navy_dark_alpha_87</color>
+    <color name="button">@color/white</color>
+</resources>

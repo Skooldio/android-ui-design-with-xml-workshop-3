@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Workshop 3</string>
+
+    <string name="headphone_title">Headphone</string>
+    <string name="headphone_name">BZM-01</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="battery">Battery</string>
+    <string name="percent_20">20%</string>
+    <string name="frequency_range">Frequency range</string>
+    <string name="frequency_range_value">6Hz - 22kHz</string>
+    <string name="bluetooth_version">Bluetooth version</string>
+    <string name="bluetooth_version_value">Bluetooth 5.0</string>
+    <string name="power_supply">Power supply</string>
+    <string name="power_supply_value">5.0 V DC, 330mA</string>
+    <string name="firmware">Firmware</string>
+    <string name="firmware_value">4824.13az</string>
+    <string name="noise_cancellation">Noise cancellation</string>
+    <string name="save">Save</string>
+</resources>

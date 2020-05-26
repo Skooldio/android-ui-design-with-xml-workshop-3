@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageViewHeadphone"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_headphone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/buttonBack"
+            style="@style/IconButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="29dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewHeadPhoneTitle"
+            style="@style/Text.SubTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="38dp"
+            android:text="@string/headphone_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonBack" />
+
+        <TextView
+            android:id="@+id/textViewHeadPhoneName"
+            style="@style/Text.Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/headphone_name"
+            app:layout_constraintEnd_toEndOf="@id/imageViewHeadphone"
+            app:layout_constraintStart_toStartOf="@id/textViewHeadPhoneTitle"
+            app:layout_constraintTop_toBottomOf="@id/textViewHeadPhoneTitle" />
+
+        <TextView
+            android:id="@+id/textViewBluetooth"
+            style="@style/Text.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/bluetooth"
+            app:layout_constraintStart_toStartOf="@id/textViewHeadPhoneName"
+            app:layout_constraintTop_toBottomOf="@id/textViewHeadPhoneName" />
+
+        <Switch
+            android:id="@+id/switchBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:layout_constraintStart_toStartOf="@id/textViewBluetooth"
+            app:layout_constraintTop_toBottomOf="@id/textViewBluetooth" />
+
+        <TextView
+            android:id="@+id/textViewBattery"
+            style="@style/Text.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:text="@string/battery"
+            app:layout_constraintStart_toStartOf="@id/switchBluetooth"
+            app:layout_constraintTop_toBottomOf="@id/switchBluetooth" />
+
+        <TextView
+            android:id="@+id/textViewBatteryLevel"
+            style="@style/Text.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="@string/percent_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textViewBattery" />
+
+        <ProgressBar
+            android:id="@+id/progressBarBattery"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="9dp"
+            android:max="100"
+            android:progress="20"
+            app:layout_constraintEnd_toEndOf="@id/textViewBatteryLevel"
+            app:layout_constraintStart_toStartOf="@id/textViewBattery"
+            app:layout_constraintTop_toBottomOf="@id/textViewBattery" />
+
+        <View
+            android:id="@+id/dividerBattery"
+            style="@style/Divider"
+            app:layout_constraintEnd_toEndOf="@id/progressBarBattery"
+            app:layout_constraintStart_toStartOf="@id/progressBarBattery"
+            app:layout_constraintTop_toBottomOf="@id/progressBarBattery" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineCenterHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/textViewFrequencyRange"
+            style="@style/Text.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/frequency_range"
+            app:layout_constraintEnd_toEndOf="@id/guidelineCenterHorizontal"
+            app:layout_constraintStart_toStartOf="@id/dividerBattery"
+            app:layout_constraintTop_toBottomOf="@id/dividerBattery" />
+
+        <TextView
+            android:id="@+id/textViewFrequencyRangeValue"
+            style="@style/Text.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/frequency_range_value"
+            app:layout_constraintEnd_toEndOf="@id/dividerBattery"
+            app:layout_constraintStart_toStartOf="@id/guidelineCenterHorizontal"
+            app:layout_constraintTop_toTopOf="@id/textViewFrequencyRange" />
+
+        <TextView
+            android:id="@+id/textViewBluetoothVersion"
+            style="@style/Text.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="@string/bluetooth_version"
+            app:layout_constraintEnd_toEndOf="@id/guidelineCenterHorizontal"
+            app:layout_constraintStart_toStartOf="@id/textViewFrequencyRange"
+            app:layout_constraintTop_toBottomOf="@id/textViewFrequencyRange" />
+
+        <TextView
+            android:id="@+id/textViewBluetoothVersionValue"
+            style="@style/Text.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/bluetooth_version_value"
+            app:layout_constraintEnd_toEndOf="@id/textViewFrequencyRangeValue"
+            app:layout_constraintStart_toStartOf="@id/guidelineCenterHorizontal"
+            app:layout_constraintTop_toTopOf="@id/textViewBluetoothVersion" />
+
+        <TextView
+            android:id="@+id/textViewPowerSupply"
+            style="@style/Text.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="@string/power_supply"
+            app:layout_constraintEnd_toEndOf="@id/guidelineCenterHorizontal"
+            app:layout_constraintStart_toStartOf="@id/textViewBluetoothVersion"
+            app:layout_constraintTop_toBottomOf="@id/textViewBluetoothVersion" />
+
+        <TextView
+            android:id="@+id/textViewPowerSupplyValue"
+            style="@style/Text.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/power_supply_value"
+            app:layout_constraintEnd_toEndOf="@id/textViewBluetoothVersionValue"
+            app:layout_constraintStart_toStartOf="@id/guidelineCenterHorizontal"
+            app:layout_constraintTop_toTopOf="@id/textViewPowerSupply" />
+
+        <TextView
+            android:id="@+id/textViewFirmware"
+            style="@style/Text.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="@string/firmware"
+            app:layout_constraintEnd_toEndOf="@id/guidelineCenterHorizontal"
+            app:layout_constraintStart_toStartOf="@id/textViewPowerSupply"
+            app:layout_constraintTop_toBottomOf="@id/textViewPowerSupply" />
+
+        <TextView
+            android:id="@+id/textViewFirmwareValue"
+            style="@style/Text.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/firmware_value"
+            app:layout_constraintEnd_toEndOf="@id/textViewPowerSupplyValue"
+            app:layout_constraintStart_toStartOf="@id/guidelineCenterHorizontal"
+            app:layout_constraintTop_toTopOf="@id/textViewFirmware" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrierFirmware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="textViewFirmware, textViewFirmwareValue" />
+
+        <View
+            android:id="@+id/dividerSpecification"
+            style="@style/Divider"
+            app:layout_constraintEnd_toEndOf="@id/textViewFirmwareValue"
+            app:layout_constraintStart_toStartOf="@id/textViewFirmware"
+            app:layout_constraintTop_toBottomOf="@id/barrierFirmware" />
+
+        <ImageView
+            android:id="@+id/imageViewDolbyAtmos"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_dolby_atmos"
+            app:layout_constraintBottom_toBottomOf="@id/switchDolbyAtmos"
+            app:layout_constraintStart_toStartOf="@id/dividerSpecification"
+            app:layout_constraintTop_toTopOf="@id/switchDolbyAtmos" />
+
+        <Switch
+            android:id="@+id/switchDolbyAtmos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:checked="true"
+            app:layout_constraintEnd_toEndOf="@id/dividerSpecification"
+            app:layout_constraintTop_toBottomOf="@id/dividerSpecification" />
+
+        <TextView
+            android:id="@+id/textViewNoiseCancellation"
+            style="@style/Text.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/noise_cancellation"
+            app:layout_constraintBottom_toBottomOf="@id/switchNoiseCancellation"
+            app:layout_constraintEnd_toEndOf="@id/guidelineCenterHorizontal"
+            app:layout_constraintStart_toStartOf="@id/imageViewDolbyAtmos"
+            app:layout_constraintTop_toTopOf="@id/switchNoiseCancellation" />
+
+        <Switch
+            android:id="@+id/switchNoiseCancellation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            app:layout_constraintEnd_toEndOf="@id/switchDolbyAtmos"
+            app:layout_constraintTop_toBottomOf="@id/switchDolbyAtmos" />
+
+        <Button
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/switchNoiseCancellation"
+            app:layout_constraintStart_toStartOf="@id/textViewNoiseCancellation"
+            app:layout_constraintTop_toBottomOf="@id/switchNoiseCancellation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
