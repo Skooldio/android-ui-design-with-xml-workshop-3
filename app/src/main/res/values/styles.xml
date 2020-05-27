@@ -8,23 +8,21 @@
 
     <style name="Text">
         <item name="android:textColor">@color/text</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/noto_sans</item>
     </style>
 
     <style name="Text.Title">
         <item name="android:textSize">32sp</item>
-        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="Text.SubTitle">
         <item name="android:textSize">14sp</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="Text.Body">
         <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="Button">
