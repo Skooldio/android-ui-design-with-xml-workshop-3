@@ -18,7 +18,11 @@
 
     </style>
 
-    <style name="Text.Body">
+    <style name="Text.Label">
+
+    </style>
+
+    <style name="Text.Value">
 
     </style>
 
