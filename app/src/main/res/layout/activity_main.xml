@@ -57,7 +57,7 @@
 
         <TextView
             android:id="@+id/textViewBluetooth"
-            style="@style/Text.Body"
+            style="@style/Text.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -75,7 +75,7 @@
 
         <TextView
             android:id="@+id/textViewBattery"
-            style="@style/Text.Body"
+            style="@style/Text.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="46dp"
@@ -85,7 +85,7 @@
 
         <TextView
             android:id="@+id/textViewBatteryLevel"
-            style="@style/Text.Body"
+            style="@style/Text.Value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="24dp"
@@ -121,7 +121,7 @@
 
         <TextView
             android:id="@+id/textViewFrequencyRange"
-            style="@style/Text.Body"
+            style="@style/Text.Label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -132,7 +132,7 @@
 
         <TextView
             android:id="@+id/textViewFrequencyRangeValue"
-            style="@style/Text.Body"
+            style="@style/Text.Value"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="end"
@@ -143,7 +143,7 @@
 
         <TextView
             android:id="@+id/textViewBluetoothVersion"
-            style="@style/Text.Body"
+            style="@style/Text.Label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="21dp"
@@ -154,7 +154,7 @@
 
         <TextView
             android:id="@+id/textViewBluetoothVersionValue"
-            style="@style/Text.Body"
+            style="@style/Text.Value"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="end"
@@ -165,7 +165,7 @@
 
         <TextView
             android:id="@+id/textViewPowerSupply"
-            style="@style/Text.Body"
+            style="@style/Text.Label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="21dp"
@@ -176,7 +176,7 @@
 
         <TextView
             android:id="@+id/textViewPowerSupplyValue"
-            style="@style/Text.Body"
+            style="@style/Text.Value"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="end"
@@ -187,7 +187,7 @@
 
         <TextView
             android:id="@+id/textViewFirmware"
-            style="@style/Text.Body"
+            style="@style/Text.Label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="21dp"
@@ -198,7 +198,7 @@
 
         <TextView
             android:id="@+id/textViewFirmwareValue"
-            style="@style/Text.Body"
+            style="@style/Text.Value"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="end"
@@ -243,7 +243,7 @@
 
         <TextView
             android:id="@+id/textViewNoiseCancellation"
-            style="@style/Text.Body"
+            style="@style/Text.Label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/noise_cancellation"
